@@ -1,0 +1,16 @@
+<section id="projects">
+  <div class="container">
+
+    <h2 i18n="@@app.projects">Projects</h2>
+
+    <p style="text-align: center;" i18n="@@app.projects.intro">You will find here all my personal and school projects.<br /> I signed NDA for all my freelance / professional projects so you won't find them here.</p>
+
+    <div class="row" style="justify-content: center;">
+
+      <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+        <project [project]=project></project>
+      </div>
+
+    </div>
+  </div>
+</section>

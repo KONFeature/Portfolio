@@ -1,0 +1,14 @@
+<div class="card">
+
+  <div class="card-img-container">
+    <img [defaultImage]="picturesService.getCompressedPath(degree.thumbnail)" [lazyLoad]="degree.thumbnail" class="card-img-top" />
+  </div>
+
+  <div class="card-body">
+
+    <h5 class="card-title">{{degree.name}}</h5>
+    <p class="card-text">{{langService.extractRightText(degree.description)}}</p>
+    <p class="card-text" i18n="@@app.career.degrees.obtained">Obtained in {{degree.obtentionYear}} at {{degree.school}}</p>
+    
+  </div>
+</div>

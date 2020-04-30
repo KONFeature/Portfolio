@@ -1,0 +1,15 @@
+<div class="card">
+
+  <div class="card-img-container-43">
+    <img [defaultImage]="picturesService.getCompressedPath(professional.thumbnail)" [lazyLoad]="professional.thumbnail"
+      class="card-img-top" />
+  </div>
+
+  <div class="card-body">
+
+    <h5 class="card-title">{{professional.name}}</h5>
+    <p *ngIf="professional.endAt" i18n="@@app.career.professional.worked.period">Worked here from {{professional.startAt}} to {{professional.endAt}} at {{professional.place}}</p>
+    <p *ngIf="!professional.endAt" i18n="@@app.career.professional.worked.actual">Worked here since {{professional.startAt}} at {{professional.place}}</p>
+    <p>{{langService.extractRightText(professional.description)}}</p>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<section id="skills">
+  <div class="container">
+
+    <h2 i18n="@@app.skills">Skills</h2>
+
+    <div class="row" style="justify-content: center;">
+
+      <div class="col-12">
+        <div class="card ">
+          <div class="card-body">
+
+            <h5 class="card-title" i18n="@@app.skills.main">Main skills</h5>
+
+            <div style="height: 50vh; min-height: 40vh; width: 100%;">
+
+              <ngx-charts-bar-vertical [results]="main" [yAxisTickFormatting]="yAxisTickFormattingFn" [xAxis]="true"
+                [yAxis]="true" [legend]="showLegend" [maxXAxisTickLength]=32 [maxYAxisTickLength]=32
+                [barPadding]="barPadding" [yScaleMax]=100>
+
+                <ng-template #tooltipTemplate let-model="model">
+                  <div style="margin: 16px;">
+                    <h6>{{model.name}}</h6>
+                    <p>{{getExtraForLang(model)}}</p>
+                    {{getStringFromValue(model.value)}}
+                  </div>
+                </ng-template>
+
+              </ngx-charts-bar-vertical>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card ">
+          <div class="card-body">
+
+            <h5 class="card-title" i18n="@@app.skills.other">Other skills</h5>
+
+            <div style="height: 50vh; min-height: 40vh; width: 100%;">
+
+              <ngx-charts-bar-vertical [results]="secondary" [yAxisTickFormatting]="yAxisTickFormattingFn"
+                [xAxis]="true" [yAxis]="true" [legend]="showLegend" [maxXAxisTickLength]=32 [maxYAxisTickLength]=32
+                [barPadding]="barPadding" [yScaleMax]=100>
+
+                <ng-template #tooltipTemplate let-model="model">
+                  <div style="margin: 16px;">
+                    <h6>{{model.name}}</h6>
+                    <p>{{getExtraForLang(model)}}</p>
+                    <p>{{getStringFromValue(model.value)}}</p>
+                  </div>
+                </ng-template>
+
+              </ngx-charts-bar-vertical>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

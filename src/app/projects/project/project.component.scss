@@ -1,0 +1,14 @@
+.carousel-pic-container {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7);
+
+  img {
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+  }
+}
+
+.carousel-control-prev, .carousel-control-next {
+  cursor: pointer;
+}

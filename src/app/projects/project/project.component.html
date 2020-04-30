@@ -1,0 +1,86 @@
+<div class="card">
+
+  <div class="card-img-container">
+    <img [defaultImage]="picturesService.getCompressedPath(project.thumbnail)" [lazyLoad]="project.thumbnail" class="card-img-top" />
+  </div>
+
+  <div class="card-body">
+
+    <h5 class="card-title">{{project.name}}</h5>
+    <p class="card-text">{{langService.extractRightText(project.description)}}</p>
+
+    <!-- Tags -->
+    <div class="tags row">
+      <div class="col-auto" *ngFor="let tag of project.tags;">
+        <span class="badge badge-secondary">{{tag}}</span>
+      </div>
+    </div>
+
+    <!-- Link to open the modal with more details about the project -->
+    <button class="btn btn-primary" (click)="openModal(content)" i18n="@@app.project.btn.more">More info</button>
+  </div>
+</div>
+
+<!-- The modal containing info about the project -->
+<ng-template #content let-modal class="project-modal">
+
+  <div class="modal-header">
+    <h4 class="modal-title">{{project.name}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body row">
+
+    <!-- Project informations -->
+    <div class="col-md-12 col-lg-6">
+      <h4 class="mb-2" i18n="@@app.project.modal.additionnal">Additionnal informations</h4>
+      <p>{{langService.extractRightText(project.description)}}</p>
+      <p>{{langService.extractRightText(project.complementaryInfos)}}</p>
+      <p i18n="@@app.project.modal.date">Worked on this project from {{project.startDate}} to {{project.endDate}}</p>
+
+      <!-- Tags for this projects -->
+      <div class="tags row mb-3">
+        <div class="col-auto" *ngFor="let tag of project.tags;">
+          <span class="badge badge-secondary">{{tag}}</span>
+        </div>
+      </div>
+
+      <!-- External links of this projects -->
+      <div *ngIf="project.links" class="external-links row mb-5">
+        <h5 class="col-12 mb-2" i18n="@@app.project.modal.externals">You can checkout this project here : </h5>
+
+        <div class="col-4" *ngFor="let link of project.links;">
+          <a [href]="link.url" class="btn btn-primary">
+            <fa-icon [icon]="['fab', getIconForProvider(link.host)]"></fa-icon> {{link.host}}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carroussel for project pics -->
+    <div class="col-md-12 col-lg-6">
+      <h4 class="col-12  mb-2" i18n="@@app.project.modal.pictures">Some pictures</h4>
+      <div style="text-align: center;">
+        <ngb-carousel style="display: inline-block;">
+          <ng-template ngbSlide *ngFor="let picture of project.pictures;">
+            <div class="picsum-img-wrapper carousel-pic-container">
+              <img [defaultImage]="picturesService.getCompressedPath(picture.path)" [lazyLoad]="picture.path" [alt]="picture.title">
+            </div>
+            <div class="carousel-caption" *ngIf="picture.title">
+              <h3>{{picture.title}}</h3>
+              <p *ngIf="picture.description">{{picture.description}}</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.dismiss()" i18n="@@app.project.modal.close">Close</button>
+  </div>
+
+</ng-template>

@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" #navbar>
+  <div class="container">
+
+    <a class="navbar-brand" [routerLink]="'/'">Quentin Nivelais</a>
+
+    <!-- Languages switchers -->
+    <div ngbDropdown>
+      <button class="btn btn-outline" ngbDropdownToggle i18n="@@app.languages">Language</button>
+      <div ngbDropdownMenu aria-labelledby="languages dropdown" class="bg-primary">
+        <button class="btn btn-outline" [ngClass]="{'active' : isLangActive('en')}" (click)="changeLang('en')"
+          ngbDropdownItem>English</button>
+        <button class="btn btn-outline" [ngClass]="{'active' : isLangActive('fr')}" (click)="changeLang('fr')"
+          ngbDropdownItem>Francais</button>
+      </div>
+    </div>
+
+    <!-- Toggler for the mobile dropdown menu -->
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+
+    <!-- Menu itself -->
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <!-- Navigations items -->
+        <li class="nav-item">
+          <a class="nav-link" pageScroll href="#home" [pageScrollOffset]="pageOffset" (click)="isMenuCollapsed = true"
+            [ngClass]="{'active' : homeActive}" i18n="@@app.home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" pageScroll href="#projects" [pageScrollOffset]="pageOffset"
+            (click)="isMenuCollapsed = true" [ngClass]="{'active' : projectsActive}" i18n="@@app.projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" pageScroll href="#skills" [pageScrollOffset]="pageOffset" (click)="isMenuCollapsed = true"
+            [ngClass]="{'active' : skillsActive}" i18n="@@app.skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" pageScroll href="#career" [pageScrollOffset]="pageOffset" (click)="isMenuCollapsed = true"
+            [ngClass]="{'active' : careerActive}" i18n="@@app.career">Career</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
