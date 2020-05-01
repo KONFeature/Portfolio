@@ -11,7 +11,7 @@ export var main = [
       {
         lang: "fr",
         text:
-          "Ce que je prefere et que je fait le plus, un peut plus de 20 projets effectuee avec. Je l'enseigne aussi depuis 2018 a Supinfo.",
+          "Ce que je prefère et que je fais le plus, un peut plus de 20 projets effectués avec. Je l'enseigne aussi depuis 2018 a Supinfo.",
       },
     ],
   },
@@ -27,7 +27,7 @@ export var main = [
       {
         lang: "fr",
         text:
-          "Mon premier choix lorsqu'il s'agit de concevoir des back office secruisee et rebosute pour mes applications.",
+          "Mon premier choix lorsqu'il s'agit de concevoir des backs office secruisés et robustes pour mes applications.",
       },
     ],
   },
@@ -43,7 +43,7 @@ export var main = [
       {
         lang: "fr",
         text:
-          "Utiliser pour des panel d'administration pour les back office, mais aussi pour quelques sites vitrines, comme ce portfolio",
+          "Utilisé pour des panels d'administration pour les backs office, mais aussi pour quelques sites vitrines, comme ce portfolio",
       },
     ],
   },
@@ -75,7 +75,7 @@ export var main = [
       {
         lang: "fr",
         text:
-          "La meilleur technologie, a mon gout, pour la creations d'applications cross plateform native. J'ai besoins de plus d'experiences sur le sujet mais je l'apprecie vraiment bien.",
+          "La meilleur technologie, a mon goût, pour la creation d'applications cross plateform natives. J'ai besoin de plus d'experiences sur le sujet mais je l'apprecie vraiment .",
       },
     ],
   },
@@ -93,7 +93,7 @@ export var secondary = [
       {
         lang: "fr",
         text:
-          "Mon premier choix pour des base de donnees, sams gros volumes de donnees, mais complexe",
+          "Mon premier choix pour des bases de données, sans gros volumes de données, mais complexe",
       },
     ],
   },
@@ -109,7 +109,7 @@ export var secondary = [
       {
         lang: "fr",
         text:
-          "Utilisations de ces differentes plateformes sur mes projets : Jenkins / Nexus / Ansible / Docker.",
+          "Utilisation de ces différentes plateformes sur mes projets : Jenkins / Nexus / Ansible / Docker.",
       },
     ],
   },
@@ -139,7 +139,7 @@ export var secondary = [
       {
         lang: "fr",
         text:
-          "J'ai commencer a developper sur cette technologie, toujours dans mon coeurs, mais maintenant je prefere l'utilisation de SpringBoot / Angular",
+          "J'ai commencé a developper sur cette technologie, toujours dans mon coeur, mais maintenant je prefere l'utilisation de SpringBoot / Angular",
       },
     ],
   },
@@ -155,7 +155,7 @@ export var secondary = [
       {
         lang: "fr",
         text:
-          "Utiliser sur plusieurs gros projets necessitants un hebergement robuste et scalable.",
+          "Utilisé sur plusieurs gros projets necessitants un hebergement robuste et scalable.",
       },
     ],
   },
@@ -171,7 +171,7 @@ export var secondary = [
       {
         lang: "fr",
         text:
-          "Utiliser sur tous mes projets de BigData, je ne suis pas tres a l'aise encors avec, malgres 3 projets developpee avec.",
+          "Utilisé sur tous mes projets de BigData, je ne suis pas tres à l'aise encore avec, malgré 3 projets developpés avec.",
       },
     ],
   },
