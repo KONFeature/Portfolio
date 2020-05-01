@@ -10,7 +10,7 @@ export var degrees = [
       {
         lang: "fr",
         text:
-          "Baccalaureat Scientifique avec option Sciences de l'ingenieurs",
+          "Baccalauréat Scientifique avec option Sciences de l'ingenieur",
       },
     ],
     thumbnail: "assets/images/career/degrees/diplome_bac.png",
@@ -26,12 +26,12 @@ export var degrees = [
       },
       {
         lang: "fr",
-        text: "Diplome Universitaire Technologique en Informatique",
+        text: "Diplôme Universitaire Technologique en Informatique",
       },
     ],
     thumbnail: "assets/images/career/degrees/diplome_dut.png",
     obtentionYear: 2017,
-    school: "IUT informatiques - Nantes (44)",
+    school: "IUT informatique - Nantes (44)",
   },
   {
     name: "Master",
@@ -42,7 +42,7 @@ export var degrees = [
       },
       {
         lang: "fr",
-        text: "Master en Informatique et en Science de l'information",
+        text: "Master en Informatique et en Sciences de l'information",
       },
     ],
     thumbnail: "assets/images/career/degrees/diplome_master.jpg",
@@ -65,7 +65,7 @@ export var professionals = [
       {
         lang: "fr",
         text:
-          "Plusieurs ;issions effectueer en freelance, si mon profil vous interesse vous pouvez me contacter via Malt ou Linkedin.",
+          "Plusieurs missions effectuées en freelance, si mon profil vous interesse vous pouvez me contacter via Malt ou Linkedin.",
       },
     ],
     thumbnail: "assets/images/career/professional/freelance.jpg",
@@ -83,7 +83,7 @@ export var professionals = [
       {
         lang: "fr",
         text:
-          "Alternance en developpement Mobile, j'ai participer a la conceptions, aux developpements, evolutions et maintenances de plusieurs grosse applications en production, et de leur back office. Tout ca avec du Java et Kotlin, sur Android et Spring Boot.",
+          "Alternance en developpement Mobile, j'ai participé aux conceptions, aux developpements, evolutions et maintenances de plusieurs applications conséquentes en production, et de leur back office. Le tout avec du Java et Kotlin, sur Android et Spring Boot.",
       },
     ],
     thumbnail: "assets/images/career/professional/capgemini.png",
@@ -102,7 +102,7 @@ export var professionals = [
       {
         lang: "fr",
         text:
-          "Stage de fin d'etudes pour mon DUT, j'ai travaille sur un panel d'administration pour l'equipe que j'ai rejoins.",
+          "Stage de fin d'etudes pour mon DUT, j'ai travaillé sur un panel d'administration pour l'équipe que j'ai rejoins.",
       },
     ],
     thumbnail: "assets/images/career/professional/covea.png",
@@ -121,7 +121,7 @@ export var professionals = [
       {
         lang: "fr",
         text:
-          "Ma premiere experience en Freelance. J'ai creer trois site web pour des PME Nantaise. Si vous voulez un exemple regarder le projet PolynetService.",
+          "Ma première experience en Freelance. J'ai créé trois sites web pour des PME Nantaises. Par exemple le projet PolynetService.",
       },
     ],
     thumbnail: "assets/images/career/professional/smartchoice.png",
