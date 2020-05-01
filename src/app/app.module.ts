@@ -4,7 +4,6 @@ import { NgModule } from "@angular/core";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxChartsModule } from "@swimlane/ngx-charts";
-import { NgxPageScrollModule } from "ngx-page-scroll";
 import { LazyLoadImageModule } from "ng-lazyload-image";
 
 import { AppRoutingModule } from "./app-routing.module";
@@ -17,7 +16,6 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { CareerComponent } from "./career/career.component";
 import { DegreeComponent } from "./career/degree/degree.component";
 import { ProfessionalComponent } from "./career/professional/professional.component";
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -38,8 +36,6 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     NgbModule,
     NgxChartsModule,
     FontAwesomeModule,
-    NgxPageScrollCoreModule.forRoot({duration: 500}),
-    NgxPageScrollModule,
     LazyLoadImageModule,
   ],
   providers: [],

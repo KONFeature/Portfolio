@@ -7,7 +7,6 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
 } from "@angular/core";
-import { getBrowserLang } from "@locl/core";
 import { HomeElementsService } from "../services/home-elements.service";
 import { LangService } from "../services/lang.service";
 
@@ -22,11 +21,14 @@ export class ToolbarComponent implements OnInit {
   @ViewChild("navbar")
   private currentElementRef: ElementRef;
 
+  // Enum of the different scroll target
+  public ScrollTarget = ScrollTarget;
+
   // Is the top menu collapsed ?
   public isMenuCollapsed = true;
 
   // Offset to apply on the element position
-  public pageOffset: number;
+  public pageOffset: number = 0;
 
   // Activate or not the av button
   public homeActive = true;
@@ -36,8 +38,7 @@ export class ToolbarComponent implements OnInit {
 
   constructor(
     private homeElementService: HomeElementsService,
-    private langService: LangService,
-    private changeDetection: ChangeDetectorRef
+    private langService: LangService
   ) {}
 
   ngOnInit(): void {}
@@ -45,7 +46,6 @@ export class ToolbarComponent implements OnInit {
   ngAfterViewInit() {
     // Calculate the offset to apply on page scroll
     this.pageOffset = this.currentElementRef.nativeElement.offsetHeight;
-    this.changeDetection.detectChanges;
   }
 
   @HostListener("window:scroll", ["$event"])
@@ -96,6 +96,49 @@ export class ToolbarComponent implements OnInit {
    * @param lang The targent languages
    */
   changeLang(lang: string) {
-    this.langService.changeCurrentLang(lang)
+    this.langService.changeCurrentLang(lang);
   }
+
+  /**
+   * Scroll to a defined target
+   * @param target 
+   */
+  scrollToTarget(target: ScrollTarget): void {
+    var element: any;
+    switch (target) {
+      case ScrollTarget.HOME:
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        return;
+      case ScrollTarget.PROJECTS:
+        element = this.homeElementService.projectsElement;
+        break;
+      case ScrollTarget.SKILLS:
+        element = this.homeElementService.skillsElement;
+        break;
+      case ScrollTarget.CAREER:
+        element = this.homeElementService.careerElement;
+        break;
+    }
+    //Get the scroll poistion and apply the diff of the header
+    var scrollOffset = element.getBoundingClientRect().y - this.pageOffset
+    if(window.innerWidth < 980) {
+      // Apply another offset because the scroll poisition is fcked up
+      scrollOffset -= 170
+    }
+    // Launch the scroll
+    window.scrollBy({
+      top: scrollOffset,
+      behavior: "smooth",
+    });
+  }
+}
+
+export enum ScrollTarget {
+  HOME,
+  PROJECTS,
+  SKILLS,
+  CAREER,
 }

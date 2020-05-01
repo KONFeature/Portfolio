@@ -13,6 +13,8 @@ $theme-colors: (
 // Sections (each sections has the same main style)
 section {
   margin: 3vh;
+  scroll-behavior: smooth;
+  scroll-margin-top: 60px;
 
   h2 {
     text-align: center;
