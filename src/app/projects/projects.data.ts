@@ -10,7 +10,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Generateur d'attestation de deplacement derogatoire durant l'epidemie du Covid19",
+          "Generateur d'attestation de déplacement dérogatoire durant l'epidemie du Covid19",
       },
     ],
     complementaryInfos: [
@@ -22,7 +22,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Ce projet fut ma premiere application a destination du play store public, cela ma appris a utiliser la play console avec tout le proccessus de deploiement d'application. J'ai utiliser Kotlin, en respectant la clean architecture recommande par Google, avec aussi quelques librairies populaires comme Koin, ObjectBox or ZXing.",
+          "Ce projet fut ma première application à destination du play store public, cela m'a appris a utiliser la play console avec le proccessus de deploiement d'application. J'ai utilisé Kotlin, en respectant la clean architecture recommandée par Google, avec aussi quelques librairies populaires comme Koin, ObjectBox or ZXing.",
       },
     ],
     startDate: "avril 2020",
@@ -73,7 +73,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Applications pour etudier la reussite des journee porte ouvertes de mon ecole.",
+          "Applications pour etudier la réussite des journées portes ouvertes de mon école.",
       },
     ],
     complementaryInfos: [
@@ -85,7 +85,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Application realiser sur demande de mon ecole, et utiliser par celle-ci. C'est un simple questionnaire de satisfactions des journees portes ouvertes, avec des smiley. Un compte rendu des differentes reponses est generer et envoye par mail a la directrice de l'ecole. Pour ce porjet j'ai utilise Kotlin et ObjectBox, en respectant la clean architecture.",
+          "Application realisée sur demande de mon école, et utilisée par celle-ci. C'est un simple questionnaire de satisfaction destiné aux visiteurs, avec des smiley. Un compte rendu des differentes réponses est generé et envoyé par mail a la directrice de l'école. Pour ce porjet j'ai utilisé Kotlin et ObjectBox, en respectant la clean architecture.",
       },
     ],
     startDate: "february 2020",
@@ -139,7 +139,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Cette application est heberger sur le testnet goerli. Avec cette applications, le createur peut ajouter des candidats et changer la date des elections. L'utilisateur peux participer a l'elections, puis voter pour un candidats, ou deleguer sont votes a un autre candidats. J'ai developpe les smartcontract en Solidity, et le front en Angular avec Web3JS pour interagir avec la blockchain.",
+          "Cette application est hebergée sur le testnet goerli. Avec cette application, le createur peut ajouter des candidats et changer la date des elections. L'utilisateur peut participer a l'election, puis voter pour un candidat, ou déléguer son vote à un autre candidats. J'ai developpé les smartcontract en Solidity, et le front en Angular avec Web3JS pour interagir avec la blockchain.",
       },
     ],
     startDate: "march 2020",
@@ -202,7 +202,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Ce projet etait mon examen dfinal de 4eme annee a Supinfo. L'objectif etait de developpe une blockchain complete, sans utilise aucune base existante, avec une interface web et CLI. J'ai developpe la logique metier et une grosse partie de l'interface CLI. Tout ca en utilisant en Kotlin, SpringBoot, Netty etc. A la fin, la blockchain ete operationnel, avec dla possibiltie de faire des transactions (avec message crypter), de la PoW, de la gestions de wallet, du minage de block ...",
+          "Ce projet etait mon examen final de 4eme année a Supinfo. L'objectif etait de developper une blockchain complète, sans utiliser aucune base existante, avec une interface web et CLI. J'ai developpé la logique metier et une grosse partie de l'interface CLI. Tout en utilisant en Kotlin, SpringBoot, Netty etc. A la fin, la blockchain était operationnelle, avec la possibilté de faire des transactions (avec message crypté), de la PoW, de la gestion de wallet, du minage de block ...",
       },
     ],
     startDate: "february 2019",
@@ -241,7 +241,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Site Web dans le but de faciliter certains aspects manageriaux et comptable des PME",
+          "Site Web dans le but de faciliter certains aspects manageriaux et comptables des PME",
       },
     ],
     complementaryInfos: [
@@ -253,7 +253,7 @@ export var projects = [
       {
         lang: "fr",
         text:
-          "Ce site web, vendue a 3 PME francaise, les aides a gerer les employer, avec le pointage horraires, la gestions de l'inventaires mais aussi le kilometrage des vehicules. Tout ca avec des comptes rendues visuel, et exportable, facilement exportable vers des logiciels de gestions.",
+          "Ce site web, vendu à 3 PME francaises, les aide à gérer les employés, avec le pointage horraire, la gestion de l'inventaire mais aussi le kilometrage des vehicules.le le tout ca avec des comptes rendus visuels, et exportables facilement  vers des logiciels de gestion.",
       },
     ],
     startDate: "october 2015",
