@@ -78,12 +78,12 @@ export var professionals = [
       {
         lang: "en",
         text:
-          "Mobile developer in Apprenticeship, architecturing, creating, evolving and maintening android apps with their backoffice. All with Kotlin/Java, for Android and SpringBoot.",
+          "Teach lead on multiple android applications, with Kotlin and Java. Architecturing, creating, evolving and maintening this apps, with their backoffice. Mainly done with SpringBoot for the back-offices.",
       },
       {
         lang: "fr",
         text:
-          "Alternance en developpement Mobile, j'ai participé aux conceptions, aux developpements, evolutions et maintenances de plusieurs applications conséquentes en production, et de leur back office. Le tout avec du Java et Kotlin, sur Android et Spring Boot.",
+          "Lead tech sur plusieur applications Android, en Kotlin et en Java. De la conception conceptions, aux developpements, en passant par les evolutions de ces applications, et de leur back office. Back-offices developpé principalement en SpringBoot.",
       },
     ],
     thumbnail: "assets/images/career/professional/capgemini.png",

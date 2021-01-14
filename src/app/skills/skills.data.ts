@@ -32,6 +32,22 @@ export var main = [
     ],
   },
   {
+    name: "Flutter",
+    value: 70,
+    extra: [
+      {
+        lang: "en",
+        text:
+          "The technology I prefer to create native cross plateform App. Multiple personnal projects done with it, from web to mobile.",
+      },
+      {
+        lang: "fr",
+        text:
+          "La meilleur technologie, a mon goût, pour la creation d'applications cross plateform natives. J'ai put utiliser cette technologie sur plusieur projet personnel, du web au mobile.",
+      },
+    ],
+  },
+  {
     name: "Angular",
     value: 60,
     extra: [
@@ -49,7 +65,7 @@ export var main = [
   },
   {
     name: "KTor",
-    value: 50,
+    value: 40,
     extra: [
       {
         lang: "en",
@@ -60,22 +76,6 @@ export var main = [
         lang: "fr",
         text:
           "Ce que je prefere utiliser lorsqu'il faut developper un petit back office rapidement.",
-      },
-    ],
-  },
-  {
-    name: "Flutter",
-    value: 30,
-    extra: [
-      {
-        lang: "en",
-        text:
-          "The technology I prefer to create native cross plateform App. I need a lot more experience in it but I really like it.",
-      },
-      {
-        lang: "fr",
-        text:
-          "La meilleur technologie, a mon goût, pour la creation d'applications cross plateform natives. J'ai besoin de plus d'experiences sur le sujet mais je l'apprecie vraiment .",
       },
     ],
   },
