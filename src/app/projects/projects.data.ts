@@ -1,5 +1,81 @@
 export var projects = [
   {
+    name: "CombiPlanner",
+    description: [
+      {
+        lang: "en",
+        text:
+          "Simple app to organise some tasks by category, developped to try out Jetpack Compose.",
+      },
+      {
+        lang: "fr",
+        text:
+          "Simple application utilisé pour l'organisation de differente taches, developpé pour testé Jetpack Compose.",
+      },
+    ],
+    complementaryInfos: [
+      {
+        lang: "en",
+        text:
+          "Application developped to try out all the latest Android development tools, like Jetpack Compose for the UI, AndroidX navigation to navigate between each page, Material Design for a clean interface... And, of course, the application respect the clean architure, with a clear the separation of concerns.",
+      },
+      {
+        lang: "fr",
+        text:
+          "Application développé dans le but d'éxpérimenter les derniers outils de developpement Android, comme Jetpack Compose pour l'UI, AndroidX navigation pour les changements de page, Material Design pour une interface sobre... Tout ca en respectant la clean architecture, et une separation des préoccupations claire.",
+      },
+    ],
+    startDate: "december 2020",
+    endDate: "now",
+    links: [
+      {
+        host: "GitHub",
+        url: "https://github.com/KONFeature/CombiPlanner",
+      },
+    ],
+    tags: ["Kotlin", "Android", "Personal", "Clean Architecture"],
+    thumbnail: "assets/images/projects/covidout/thumbnail.png",
+    pictures: [],
+  },
+  {
+    name: "Crypto.com Benefit",
+    description: [
+      {
+        lang: "en",
+        text:
+          "Highly configurable dashboard to visualise benefit or loss from Crypto.com exports.",
+      },
+      {
+        lang: "fr",
+        text:
+          "Tableau de bord pour visualiser les benefices, ou pertes, d'un compte Crypto.com.",
+      },
+    ],
+    complementaryInfos: [
+      {
+        lang: "en",
+        text:
+          "This application let the user import Crypto.com transactions exports, and then, let the user create statistic on transaction type and kind. The application is developped in flutter, respecting the clean architecture.",
+      },
+      {
+        lang: "fr",
+        text:
+          "Cette application permet a l'utilisateur d'importer un export de transactions Crypto.com, puis, lui permet de créer des statistiques sur le type et genre des transaction. Toute cette application à été developpé en Flutter, en respectant la clean architecture.",
+      },
+    ],
+    startDate: "september 2020",
+    endDate: "now",
+    links: [
+      {
+        host: "GitHub",
+        url: "https://github.com/KONFeature/Crypto.com-Benefit",
+      },
+    ],
+    tags: ["Flutter", "Cross Plateform", "Personal", "Clean Architecture"],
+    thumbnail: "assets/images/projects/covidout/thumbnail.png",
+    pictures: [],
+  },
+  {
     name: "CovidOut",
     description: [
       {
