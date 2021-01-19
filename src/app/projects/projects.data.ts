@@ -34,7 +34,7 @@ export var projects = [
       },
     ],
     tags: ["Kotlin", "Android", "Personal", "Clean Architecture"],
-    thumbnail: "assets/images/projects/covidout/thumbnail.png",
+    thumbnail: "assets/images/projects/combiplanner/screen_home.jpg",
     pictures: [
       {
         path: "assets/images/projects/combiplanner/screen_home.jpg",
@@ -88,19 +88,19 @@ export var projects = [
       },
     ],
     tags: ["Flutter", "Cross Plateform", "Personal", "Clean Architecture"],
-    thumbnail: "assets/images/projects/covidout/thumbnail.png",
+    thumbnail: "assets/images/projects/cryptobenefit/screen_dashboard.jpg",
     pictures: [
       {
         path: "assets/images/projects/cryptobenefit/screen_dashboard.jpg",
+      },
+      {
+        path: "assets/images/projects/cryptobenefit/screen_stat.jpg",
       },
       {
         path: "assets/images/projects/cryptobenefit/screen_impot.jpg",
       },
       {
         path: "assets/images/projects/cryptobenefit/screen_settings.jpg",
-      },
-      {
-        path: "assets/images/projects/cryptobenefit/screen_stat.jpg",
       },
       {
         path: "assets/images/projects/cryptobenefit/screen_update.jpg",
