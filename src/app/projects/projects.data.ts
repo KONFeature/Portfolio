@@ -35,7 +35,23 @@ export var projects = [
     ],
     tags: ["Kotlin", "Android", "Personal", "Clean Architecture"],
     thumbnail: "assets/images/projects/covidout/thumbnail.png",
-    pictures: [],
+    pictures: [
+      {
+        path: "assets/images/projects/combiplanner/screen_home.jpg",
+      },
+      {
+        path: "assets/images/projects/combiplanner/screen_home_filter.jpg",
+      },
+      {
+        path: "assets/images/projects/combiplanner/screen_home_filter2.jpg",
+      },
+      {
+        path: "assets/images/projects/combiplanner/screen_task.jpg",
+      },
+      {
+        path: "assets/images/projects/combiplanner/screen_settings.jpg",
+      },
+    ],
   },
   {
     name: "Crypto.com Benefit",
@@ -73,7 +89,23 @@ export var projects = [
     ],
     tags: ["Flutter", "Cross Plateform", "Personal", "Clean Architecture"],
     thumbnail: "assets/images/projects/covidout/thumbnail.png",
-    pictures: [],
+    pictures: [
+      {
+        path: "assets/images/projects/cryptobenefit/screen_dashboard.jpg",
+      },
+      {
+        path: "assets/images/projects/cryptobenefit/screen_impot.jpg",
+      },
+      {
+        path: "assets/images/projects/cryptobenefit/screen_settings.jpg",
+      },
+      {
+        path: "assets/images/projects/cryptobenefit/screen_stat.jpg",
+      },
+      {
+        path: "assets/images/projects/cryptobenefit/screen_update.jpg",
+      },
+    ],
   },
   {
     name: "CovidOut",
