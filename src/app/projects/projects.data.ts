@@ -34,7 +34,7 @@ export var projects = [
       },
     ],
     tags: ["Kotlin", "Android", "Personal", "Clean Architecture"],
-    thumbnail: "assets/images/projects/combiplanner/screen_home.jpg",
+    thumbnail: "assets/images/projects/combiplanner/logo.png",
     pictures: [
       {
         path: "assets/images/projects/combiplanner/screen_home.jpg",
